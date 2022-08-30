@@ -15,10 +15,14 @@ function myMove() {
     function frame() {
         if (pos == 350) {
             clearInterval(id);
-        } else {
+            document.querySelector('#animate').style.backgroundColor = '#000000';
+        } else if (pos => 350) {
             pos++;
             elem.style.top = pos + "px";
             elem.style.left = pos + "px";
+            document.querySelector('#animate').style.backgroundColor = 'blue';
+
         }
     }
 }
+document.querySelector('button').onclick = myMove;
