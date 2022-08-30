@@ -2,7 +2,7 @@
     width: 50%;
 }
 
-.container.active {
+.container.active.over {
     background-color: coral;
     color: white;
     font-size: 25px;
